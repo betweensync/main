@@ -1,3 +1,14 @@
+### 1차 작업 R&R
+
+* 각 파트(구간)별 데모 환경 구축
+
+1. Mobile에서 변경 내용 감지 (JD)
+2. 파일 메타를 Couch에 저장해서 서버 Couch와 동기화 및 이벤트 (MH)
+3. Client에서 파일을 읽어 ActiveMQ에 저장까지 (CJ)
+4. ActiveMQ에서 읽어 S3에 저장 (JW)
+
+* 2차 계획: 각자 만든 Demo 환경 연동
+
 ### Jerry
 
 * Client를 CouchDB로 가정하여 Cloudant 서버 DB와 동기화 테스트
