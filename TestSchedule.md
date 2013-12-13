@@ -22,7 +22,12 @@
 
 
 ### Jiwoong
-
+* Amazon AWS : https://919279951576.signin.aws.amazon.com/console
+* ActiveMQ: http://54.238.120.65:8161/hawtio/#/activemq/browseQueue?nid=root-org.apache.activemq-Broker-localhost-Queue-storage-sync
+* 현재 랩탑의 File을 ActiveMQ로 전송하고, 소비된 데이터를 Local에 저장
+* 로컬에 저장된 데이터는 S3를 통해 사용자 버킷/서버 디렉토리/파일의 형태로 모바일과 동일한 구성을 가지도록 함.
+* ActiveMQ, S3 현재 연동된 상태
+* TODO: 아마존 디렉토리 구조 생성 및 putObject 
 
 ### Jongdae
 
