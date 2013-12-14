@@ -33,6 +33,9 @@
 
 
 ### Changjae
-
+* ActiveMQ 를 위해서 MQTT, STOMP 두개 사용 고민
+* MQTT 는 topic 만 지원하고, 너무 simple 한 protocol 이라 일단 framework 개발이 필요함 - ToDo 
+* 데모는 STOMP 로 개발 (http://activemq.apache.org/apollo/documentation/stomp-manual.html)
+* HA/LB 를 위해서 JMSXGroupId, JMSXGroupSec
 
 
