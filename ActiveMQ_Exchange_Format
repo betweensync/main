@@ -1,0 +1,78 @@
+1. Metadata
+{
+       "date": true,
+       "user": unique user id,
+       "dirs": 2,
+       "list":
+       [
+           {
+               "dir": "C:/Private",
+               "fileList":
+               [
+                   [
+                       "CaPubs",
+                       1234
+                   ],
+                   [
+                       "signCert.der",
+                       364
+                   ]
+               ]
+           },
+           {
+               "dir": "C:/Private/NPKI",
+               "fileList":
+               [
+                   [
+                       "0004045900441887.pfx",
+                       29384
+                   ],
+                   [
+                       "signPri.key",
+                       331
+                   ],
+                   [
+                       "sign.pub",
+                       204502
+                   ]
+               ]
+           }
+       ]
+    }
+
+"list": [
+    {
+      "dir": "C:/Private",
+      "fileList": [
+        {
+          "name": "CaPubs",
+          "length": 1234
+        },
+        {
+          "name": "signCert.der",
+          "length": 364
+        }
+      ]
+    },
+    {
+      "dir": "C:/Private/NPKI",
+      "fileList": [
+        {
+          "name": "CaPubs",
+          "length": 1234
+        },
+        {
+          "name": "signCert.der",
+          "length": 364
+        }
+      ]
+    }
+  ]
+  
+2. JMS Message format
+  Header:
+  * JMSXGroupID : unique_user_id;실제 파일 이름;Size
+  ex : eggboy;C:/Private/NPKI/CaPubs;1234
+  * JMSXGroupSeq : File Sequence -> 32K 씩 짤라서 binary 로 넘길예정
+  Payload 
+  * BytesMessage 포맷
